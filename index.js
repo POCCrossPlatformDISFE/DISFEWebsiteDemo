@@ -16,8 +16,8 @@ app.use(function(request, response, next) {
 });
 
 app.get('/', function(request, response) {  
-  
-  response.sendFile('La_Poste_WiFi.html');
+  response.setHeader("Access-Control-Allow-Origin", "*");
+  return response.sendFile('La_Poste_WiFi.html');
 });
 
 app.listen(app.get('port'), function() {
