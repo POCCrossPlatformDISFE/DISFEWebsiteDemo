@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/views'));
 
 app.get('/', function(request, response) {
-  response.sendFile('La Poste WiFi.html');
+  response.sendFile('La_Poste_WiFi.html');
 });
 
 app.listen(app.get('port'), function() {
