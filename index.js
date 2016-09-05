@@ -8,10 +8,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', function(request, response) {
-  response.header("Access-Control-Allow-Methods", "GET");
-  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   response.header("Access-Control-Allow-Origin", "https://disfecarrouseldemo.herokuapp.com");
-  
 
   response.sendFile('La_Poste_WiFi.html');
 });
