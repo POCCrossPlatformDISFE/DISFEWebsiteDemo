@@ -9,14 +9,14 @@ app.use(express.static(__dirname + '/public'));
 // on précise ici qu'on autorise toutes les sources
 // puis dans le second header, quels headers http sont acceptés
 app.use(function(request, response, next) {
-  response.header("Access-Control-Allow-Origin", "*");
-  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
 app.get('/', function(request, response) {  
-  response.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
-  response.sendFile('La_Poste_WiFi.html');
+  response.setHeader("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
+  return response.sendFile('La_Poste_WiFi.html');
 });
 
 app.listen(app.get('port'), function() {
