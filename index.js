@@ -26,9 +26,13 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.get('/', function(request, response) {  
-  response.setHeader("Access-Control-Allow-Origin", "*");
-  return response.sendFile('La_Poste_WiFi.html');
+app.get('/', function(request, response) {
+  var headers = {
+    'Access-Control-Allow-Origin' : 'https://disfecarrouseldemo.herokuapp.com/',
+    'Access-Control-Allow-Methods' : 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
+    'Access-Control-Allow-Headers' : 'X-Requested-With,content-type'
+  }  
+  response.sendFile('La_Poste_WiFi.html',headers);
 });
 
 app.listen(app.get('port'), function() {
