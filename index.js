@@ -14,15 +14,15 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', function(request, response) {
-  response.sendFile('La_Poste_WiFi.html');
+  response.sendFile('index.html');
 });
 
 app.get('/particulier', function(request, response) {
-  response.sendFile('views/La_Poste_WiFi.html',{root: __dirname});
+  response.sendFile('views/index.html',{root: __dirname});
 });
 
 app.get('/professionnel', function(request, response) {
-  response.sendFile('views/La_Poste_WiFi.html',{root: __dirname});
+  response.sendFile('views/index.html',{root: __dirname});
 });
 
 app.listen(app.get('port'), function() {
