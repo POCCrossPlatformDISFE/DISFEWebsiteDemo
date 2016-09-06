@@ -18,11 +18,11 @@ app.get('/', function(request, response) {
 });
 
 app.get('/particulier', function(request, response) {
-  response.sendFile('La_Poste_WiFi.html');
+  response.sendFile('La_Poste_WiFi.html',{root: ___dirname});
 });
 
 app.get('/professionnel', function(request, response) {
-  response.sendFile('La_Poste_WiFi.html');
+  response.sendFile('La_Poste_WiFi.html',{root: ___dirname});
 });
 
 app.listen(app.get('port'), function() {
