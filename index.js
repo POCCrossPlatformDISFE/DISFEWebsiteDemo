@@ -33,11 +33,6 @@ app.use(express.static(__dirname + '/public'));
 // });
 
 app.get('/', function(request, response) {
-  // var headers = {
-  //   'Access-Control-Allow-Origin' : 'https://disfecarrouseldemo.herokuapp.com/',
-  //   'Access-Control-Allow-Methods' : 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
-  //   'Access-Control-Allow-Headers' : 'X-Requested-With,content-type'
-  // }  
   response.sendFile('La_Poste_WiFi.html');
 });
 
