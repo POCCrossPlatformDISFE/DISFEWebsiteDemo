@@ -14,15 +14,15 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', function(request, response) {
-  response.sendFile('index.html');
+  response.sendFile('particulier.html');
 });
 
 app.get('/particulier', function(request, response) {
-  response.sendFile('views/index.html',{root: __dirname});
+  response.sendFile('views/particulier.html',{root: __dirname});
 });
 
 app.get('/professionnel', function(request, response) {
-  response.sendFile('views/index.html',{root: __dirname});
+  response.sendFile('views/professionnel.html',{root: __dirname});
 });
 
 app.listen(app.get('port'), function() {
