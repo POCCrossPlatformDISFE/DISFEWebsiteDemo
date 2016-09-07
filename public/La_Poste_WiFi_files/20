@@ -1,0 +1,20 @@
+(function() {
+    try {
+        var mtg_header = document.getElementsByTagName("head")[0];
+        var mtg_rt_script = document.createElement("script");
+        var src = null;
+        if (window.dmbgclzvi7of != undefined) {
+            src = 'http://mt.mediapostcommunication.net/20?__dmbgclzvi7of=&' + window.dmbgclzvi7of.data;
+        } else if (window.dmbgclzvi7of != undefined) {
+            src = 'http://mt.mediapostcommunication.net/20?__dmbgclzvi7of=&' + window.dmbgclzvi7of.data;
+        }
+        if (src != null) {
+            mtg_rt_script.type = "text/javascript";
+            mtg_rt_script.async = true;
+            mtg_rt_script.src = src;
+            mtg_header.appendChild(mtg_rt_script);
+        }
+    } catch(err){
+        (new Image).src="//errjs.ttlbd.net/?t=mt_noParam&e="+encodeURIComponent(err)
+    }
+})();

@@ -1,0 +1,4 @@
+document.write('<a href="http://adnext.fr/click/210889287?" target="_blank">');
+document.write('<div class="tile__image-wrapper--full"><img src="http://ads.adverline.com/bannieres/directenergie/Public_ID-3.JPG" alt="" longdesc="Liens partenaires" width="344" height="214" border="0" /></div>');
+document.write('<img src="http://tracking.publicidees.com/link.php?promoid=105833&progid=579&partid=26417" style="display:none; width: 0px; height: 0px;">');
+document.write('</a>');if (typeof adDelivered != 'undefined') {adDelivered++;} else {adDelivered = 1;} 
