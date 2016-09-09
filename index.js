@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', function(request, response) {
-  response.sendFile('particulier.html');
+  response.sendFile('views/particulier.html',{root:__dirname});
 });
 
 app.get('/particulier', function(request, response) {
